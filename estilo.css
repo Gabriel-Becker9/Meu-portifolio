@@ -1,0 +1,537 @@
+*{
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box; 
+}
+   body{
+         background-color: #030013;
+         font-family: "Poppins";
+         color: rgba(255, 255, 255, 0.9);
+
+       } 
+
+header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 1%;
+        position: fixed;
+}
+ 
+        ul{   
+            padding: 0 20px;     
+            display: flex;     
+            list-style-type: none;
+            color: rgba(255, 255, 255, 0.9); 
+            gap: 20px;  
+            font-weight: 300;
+            backdrop-filter: blur(10px);
+            border-radius: 30px;
+            
+            li{
+                transition: all 0.3s;
+                padding: 10px 15px 10px 15px;
+               } 
+
+            li:hover{
+                      background-color: rgb(95, 158, 160, 0.4);
+                      transform: scale(1.05);
+                      border-radius: 5px;
+                      border-radius: 20px;
+                     }
+        }
+
+
+section{
+        margin: 0;
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        padding:4%;
+
+       }
+
+.divFoto{
+          background-image: linear-gradient(to top, #0300133d 20%, rgba(95, 158, 160, 0.7));
+          height:240px;
+          width: 240px;  
+          border-radius: 50%;
+          margin-left: 130px;
+          transition: all 0.4s;
+          
+          img{
+              width: 180px;
+              border-radius:30px;
+              margin-left: 30px;
+              opacity: 0.9;
+              transition: all 0.3s;
+          }
+ }
+
+ .divFoto:hover{
+               transform: scale(1.01);
+               background-image: linear-gradient(to top, #0300133d 20%, rgba(95, 158, 160));
+               img{
+                  opacity: 1;
+               }
+ }
+.resumo{
+         height: 90vh; 
+         background-image: linear-gradient(to bottom, rgba(0, 123, 127, 0.3), #030013);
+        h1{
+            color: rgba(255, 255, 255, 0.9);
+            font-weight: 300;
+            font-size: 250%;
+            white-space: nowrap;
+        }
+
+.sub_titulo{
+            font-size: 20px;
+            color: white;
+}        
+
+.cor_nome{
+           color:rgba(95, 158, 160, 0.911);
+}        
+}
+
+.minhafoto:hover{
+                 transform: scale(1.10);
+}
+
+.conteudo_principal{
+                     margin-top: 12%;
+                     display: flex;
+                     justify-content: space-between;
+                     align-items: center;
+                 }
+
+.titulo{
+        margin-right: 8%;
+        p{
+          padding: 5px 0px 5px 0px;
+        }           
+       } 
+
+.titulosecao{
+              font-weight: 300;
+              font-size: 50px;
+}     
+
+a{
+   color:rgba(255, 255, 255, 0.9);  
+   transition: all 0.3s;
+   text-decoration: none;
+}
+
+.Secao-cursos{
+               align-items: center;
+               
+}
+
+.abrirCard{
+            transform: rotate(90deg);
+}
+
+.divcard{
+          padding: 8% 0 0 0;
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 40px 7%;
+          align-items: flex-start;
+          
+          img{
+               width: 100px;
+               border-radius: 20px;
+              }
+} 
+
+.info-oculto{
+            display: none;
+}
+
+.info-exposto{
+               max-width: 250px;
+}
+
+.Poculto{
+   display: none;
+}
+
+.gira-seta{
+            transform: rotate(-90deg);
+}
+
+.gira-seta2{
+            transform: rotate(-180deg);
+}
+
+.card{
+       background-color: rgb(95, 158, 160, 0.353);
+       width: 17%;
+       max-width: 190px;
+       min-width: 160px;
+       height: auto;
+       border-radius: 30px;
+       transition: all 0.4s;
+       padding: 20px 10px 20px 20px;
+       display: flex;
+       flex-direction: column;
+
+
+button{
+         background: none;
+         color: rgb(112, 187, 189);
+         border: none; 
+         align-self: flex-end;
+         margin: 11px 25px 0px 0px;
+         font-size: 25px;
+         font-weight: 600;
+         transition: all 0.3s;
+       }
+       
+p{
+   font-size: 13px;
+}
+
+ h3{
+           font-size: 14px;
+           padding: 10px 0 3px 0;
+       }
+}
+
+.card:hover{ 
+             transform: scale(1.06);
+             background-color: rgba(95, 158, 160, 0.747);
+}
+
+button:hover{
+        background-color: rgba(255, 255, 255, 0.24);
+        padding: 0px 6px 0px 6px;
+        border-radius: 10px;
+        
+}
+
+.secao-Experiencia{
+                    height: 105vh;
+                    align-items: center;
+                    padding-top: 10%;
+                    transition: all 0.5;
+
+                    img{
+                         width:40px;
+                         border-radius: 15px;
+                         margin-left: 21px;
+                         } 
+}
+
+.linhaTempo{
+             margin-top: 300px;
+             width: 60%;
+             background-color: cadetblue;
+             height: 7px;
+             border-radius: 20px;;
+             display: flex;
+             justify-content: space-between;
+             position: absolute;
+}
+
+.cargos{  
+         margin-top: 190px;
+         width: 50%;
+         display: flex;
+         justify-content: space-between;
+         gap: 40%;
+
+         h3{
+             font-size: 16px;
+             font-weight: 500;
+         }     
+}
+
+.aliance:hover .card-oculto{
+                              background-color: rgba(95, 158, 160, 0.353);
+                              p{
+                                opacity: 1;
+                               }
+                              
+                               h3{
+                                  opacity: 1;
+                               }
+                                  
+                                a{
+                                 display: block;
+                                 opacity: 1;
+                                }
+
+
+}
+
+
+.contato:hover .card-oculto{
+                              background-color: rgba(95, 158, 160, 0.353);
+                              p{
+                                opacity: 1;
+                               }
+                              
+                               h3{
+                                  opacity: 1;
+                               }
+
+                               a{
+                                 display: block;
+                                 opacity: 1;
+                               }                                  
+}
+
+
+.link-empresa{
+   margin-top: 5px;     
+   color: rgb(0, 136, 255);
+   font-size: 11px;
+   display: none;
+   font-weight: 300;
+}
+
+.card-oculto{
+              margin-top: 8%;
+              padding: 10px 2px 15px 15px;
+              width:300px;
+              height: auto;
+              border-radius: 20px;
+              transition: all 0.5s;
+              h3{
+                 opacity: 0;
+              }
+              
+              p{
+                 font-size: 12px;
+                 opacity: 0;
+              }
+
+              img{
+                  width: 100%;
+              }
+
+              span{
+                    color: rgb(28, 184, 190)
+              }
+}
+
+.circulo{
+          height: 20px;
+          width:20px;
+          background-color:rgb(95, 158, 160);
+          border-radius: 50%;
+          margin: 5px 0px 20px 30px;
+}
+
+.card-formacao:hover{
+                      transform: scale(1.05);
+                      background-color: rgba(95, 158, 160, 0.747);
+
+                      button{
+                              color: white;
+                      }
+}
+
+.botaoFormacao:hover{
+                     background-color:#0300133d;
+
+}
+
+.card-formacao{
+                width: auto;
+                background-color:rgba(95, 158, 160, 0.3);
+                display: flex;
+                justify-content: space-between;
+                border-radius: 25px;
+                height: auto;
+                transition: all 0.3s;
+
+                p{
+                  padding: 16px 0px 10px 40px;
+                  color:rgba(245, 245, 245, 0.768);
+                  font-size: 15px;
+                  font-weight: 500;
+                  max-width: 700px;
+                }
+
+                button{
+                        background-color: rgba(255, 255, 255, 0.103);
+                        border-radius: 20px;
+                        height: 40px;
+                        width: 40px;
+                        font-size: 30px;
+                        border: none;
+                        margin: 65px 20px 0px 40px;
+                        color: cadetblue;
+                        transition: all 0.3s;
+                }
+
+                img{
+                    width: 80px;
+                    margin: 20px 0px 0px 20px;
+                }
+
+                h3{
+                    margin-left: 20px;
+                    font-weight: 400;
+                    color: white;
+                    padding-bottom: 20px;
+                }
+
+                span{
+                      color: rgba(255, 255, 255, 0.808);
+                      font-size: 17px;
+                }
+               }
+.poculto{
+   display: none;
+}
+         
+.divcard-formacao{ 
+                  flex-direction: column; 
+                  margin-left: 300px;
+               }
+
+.secao-Formacao{
+                align-items: start;
+                margin-top: 0;
+                padding: 0;
+}
+
+.cardProjeto{
+               border-radius: 40px;
+               width:20%;
+               height: 300px;
+               background: rgba(95, 158, 160, 0.307);
+               img{
+                   width:100%;
+                   border-radius: 40px;
+                   height: 130px;
+               }
+}
+
+.titulosecao{
+              align-self: center ;
+}
+
+
+html{
+      scroll-behavior: smooth;
+}
+
+.imgContactMe{
+               display: flex;
+               justify-content: start;
+               margin-top: 5px;
+               
+               img{
+                    width:50px;
+                    transition: all 0.4s;
+               }
+
+               img:hover{
+                           transform: scale(1.2);
+                 }   
+                
+               span{
+                     margin-right: 10px;
+                     margin-left: 10px;
+                     
+                     img{
+                         width: 35px;
+                         margin-top: 8px;
+                         border-radius: 5px;
+                     }
+               }  
+}
+
+
+@media screen and (max-width:1400px ) {
+
+.divFoto{
+          height: 210px;
+          width:210px;
+          margin-left: 50px;
+
+          img{
+               width:160px;
+          }
+}   
+                            
+ .cargos{
+         gap:20%;
+ }
+
+ .divcard-formacao{
+                 margin-left: 100px;    
+ }
+
+
+.conteudo_principal{
+                      margin-top: 230px;
+
+                      h1{
+                         font-size: 35px;
+                      }
+
+                      p{
+                         font-size: 15px;
+                      }
+}
+
+.resumo{
+         height: 85vh;
+}
+
+.sub_titulo{
+             font-size: 2px;
+}
+
+.secao-Experiencia{
+                    height: 90vh;
+                    
+}
+}
+
+@media screen and (min-width:1800px ) {
+
+.conteudo_principal{
+
+      h1{
+          margin-right: 130px;
+      }
+}
+
+.divFoto{
+          margin-left: 200px;
+}
+
+.secao-Experiencia{
+                    height: 90vh;
+}
+}
+
+@media screen and (max-height: 740px) {
+               
+.secao-Experiencia{
+                    height: 110vh;
+}
+
+.titulo{
+          margin-left: 50px;
+                       
+}
+}
+
+@media screen and (max-height: 645px) and (min-width: 1000px) {
+
+.secao-Experiencia{
+                    height: 120vh;
+}      
+}
